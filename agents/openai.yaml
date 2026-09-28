@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Pickup Docs"
+  short_description: "Write resume docs so the next AI window can pick up the project"
+  default_prompt: "Use $project-pickup-docs to update this project's pickup documents for the next session."

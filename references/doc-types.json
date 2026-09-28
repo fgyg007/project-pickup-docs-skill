@@ -1,0 +1,78 @@
+{
+  "name": "jlmac-project-pickup-docs",
+  "version": 1,
+  "notesRoot": "/Volumes/notes/10-项目/个人项目",
+  "governance": "项目管理规则.md",
+  "index": "🛠️ 个人项目索引.md",
+  "authority": {
+    "currentState": "管理/项目记忆.md",
+    "history": "管理/项目历史.md",
+    "roadmap": "规划/路线图.md",
+    "debt": "管理/技术债.md",
+    "handoff": "管理/续接说明.md",
+    "git": "管理/代码与Git入口.md",
+    "entry": "00-项目入口.md",
+    "resume": "docs/RESUME.md",
+    "notesSnapshot": "docs/notes/"
+  },
+  "neverInGit": [
+    ".env",
+    "api keys",
+    "tokens",
+    "pdf",
+    "docx",
+    "exam packs",
+    "learning sqlite",
+    "私有配置 real secrets"
+  ],
+  "documents": [
+    {
+      "id": "project-entry",
+      "path": "00-项目入口.md",
+      "frontmatterType": "project-entry",
+      "role": "navigation",
+      "requiredSections": ["现在是什么", "重新开始", "五个入口", "权威边界"]
+    },
+    {
+      "id": "project-memory",
+      "path": "管理/项目记忆.md",
+      "role": "current-truth",
+      "replace": true,
+      "requiredSections": ["当前事实", "当前目标", "唯一下一步", "明确不做"]
+    },
+    {
+      "id": "project-history",
+      "path": "管理/项目历史.md",
+      "role": "append-only-history",
+      "appendOnly": true
+    },
+    {
+      "id": "handoff",
+      "path": "管理/续接说明.md",
+      "frontmatterType": "project-handoff",
+      "role": "resume-card",
+      "requiredSections": ["恢复顺序", "当前恢复基线", "下次可以直接说", "边界"]
+    },
+    {
+      "id": "roadmap",
+      "path": "规划/路线图.md",
+      "role": "future-work"
+    },
+    {
+      "id": "debt",
+      "path": "管理/技术债.md",
+      "role": "deferred-problems"
+    },
+    {
+      "id": "git-entry",
+      "path": "管理/代码与Git入口.md",
+      "role": "code-and-git"
+    },
+    {
+      "id": "resume",
+      "path": "docs/RESUME.md",
+      "role": "repo-boot",
+      "requiredSections": ["30 秒检查", "当前能跑的", "绝对不要做", "当前事实", "唯一下一步"]
+    }
+  ]
+}
